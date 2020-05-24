@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Code - Intro</title>
+</head>
+
+<body>
+  <script>
+
+    function returnSexWithIf(sex) {
+      // M, F
+      // Masculino, Feminino
+
+      if (sex === 'M') { // 3 equals verify the type and the variable's value
+        return 'Male';
+
+      } else if (sex === 'F') {
+        return 'Female';
+
+      } else {
+        return 'Wrong input!';
+      }
+    }
+
+    function returnSexWithSwitch(sex) { // Uso do SWITCH
+      // M, F
+      // MALE, FEMALE
+      switch (sex) {
+        case 'M':
+          return 'Male';
+        case 'F':
+          return 'Female';
+        default:
+          return 'Wrong input';
+      }
+    }
+
+    var result01 = returnSexWithIf('M');
+    var resutl02 = returnSexWithSwitch('F');
+
+    console.log(result01);
+    console.log(resutl02);
+
+  </script>
+</body>
+
+</html>
