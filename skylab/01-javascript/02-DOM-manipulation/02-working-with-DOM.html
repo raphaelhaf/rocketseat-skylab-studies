@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Course - DOM Manipulation</title>
+</head>
+<body>
+  <div id="app">
+    <input type="text" name="name" id="nome" class="name">
+    <button class="button">Add</button>
+  </div>
+  <script>
+    // referencing HTML events using javascript
+    
+    // getting one element's reference using the id tag
+    //var inputElement = document.getElementById('nome');
+
+    // getting a collection of input elements using the element tag
+    //var inputElement = document.getElementsByTagName('input');
+
+    // getting a collection of input elements using class as reference
+    //var inputElement = document.getElementsByClassName('name');
+
+    // getting the input element by the path
+    //var inputElement = document.querySelector('div#app input');
+
+    // getting the first element using a propertie as filter
+    //var inputElement = document.querySelector('input[name=name]');
+
+    // getting all elements using the using a propertie as filter
+    var inputElement = document.querySelector('input[name=name]');
+
+    // geting the button element that has the button as class
+    var btnElement = document.querySelector('button.button');
+    btnElement.onclick = function(){
+      alert(inputElement.value);
+    }
+
+    console.log(inputElement);
+  </script>
+</body>
+</html>

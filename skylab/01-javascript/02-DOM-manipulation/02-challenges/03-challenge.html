@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Course - DOM Manipulation - Challenges</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    var app = document.querySelector('#app');
+
+    var names = ['Diego', 'Gabriel', 'Lucas'];
+
+    var list = document.createElement('ul');
+
+    for (name of names) {
+      var listElement = document.createElement('li');
+      listElement.innerText = name;
+      list.appendChild(listElement);
+    }
+
+    app.appendChild(list);
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Course - DOM Manipulation - Challenges</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    var names = ['Diego', 'Gabriel', 'Lucas'];
+
+    var app = document.querySelector('#app');
+
+    var inputName = document.createElement('input');
+    inputName.setAttribute('type', 'text');
+    inputName.setAttribute('name','name');
+
+    var btnAdd = document.createElement('button');
+    btnAdd.innerText = 'Add';
+    btnAdd.onclick = () =>{
+      addListElement(inputName.value);
+      inputName.value = '';
+    }
+      
+
+    app.appendChild(inputName);
+    app.appendChild(btnAdd);
+
+    function addListElement(elementValue){
+      names.push(elementValue);
+      renderListElements();
+    }
+    
+    var list = document.createElement('ul');
+    
+    function renderListElements() {
+      list.innerHTML = '';
+      for (name of names) {
+        var listElement = document.createElement('li');
+        listElement.innerText = name;
+        list.appendChild(listElement);
+      }
+      app.appendChild(list);
+    }
+
+    
+    renderListElements();
+
+
+    
+
+  </script>
+
+</body>
+
+</html>

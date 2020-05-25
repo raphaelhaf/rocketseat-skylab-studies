@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Course - DOM Manipulation</title>
+</head>
+<body>
+  <div id="app">
+    <input type="text" id="name">
+  </div>
+  <script>
+    
+    // creating a link element that references a site
+    var linkElement = document.createElement('a');
+    linkElement.setAttribute('href', 'http://rocketseat.com.br');
+    linkElement.setAttribute('title', 'Rocketseat site');
+
+    // creating a text elemet
+    var textElement = document.createTextNode('Go to Rocketseat site');
+    linkElement.appendChild(textElement);
+
+    // adding the link element into the container element
+    var containerElement = document.querySelector('#app');
+    containerElement.appendChild(linkElement);
+
+    // using JS to remove a element
+    var inputElement = document.querySelector('#name');
+    containerElement.removeChild(inputElement); 
+
+
+  </script>
+</body>
+</html>

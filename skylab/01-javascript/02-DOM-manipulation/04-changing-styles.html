@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Course - DOM Manipulation</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="box"></div>
+  </div>
+  <script>
+
+      // getting the box element by the class name
+      var boxElement = document.querySelector('.box');
+
+      // changing the CSS dimensions properties
+      boxElement.style.width = '100px';
+      boxElement.style.height = '100px';
+
+      /* 
+      * changing the background-color property, in this case we use
+      * camelcase to indicate that CSS property itself has a hyphen
+      */
+      boxElement.style.backgroundColor = '#f00' ;
+
+  </script>
+</body>
+
+</html>
