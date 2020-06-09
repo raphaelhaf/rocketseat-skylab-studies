@@ -24,4 +24,4 @@
 
 1. Start the application `npm start`
 
-1. Go to [localhost:3000/] (http://localhost:3000/)
+1. Go to [localhost:3000/](http://localhost:3000/)
