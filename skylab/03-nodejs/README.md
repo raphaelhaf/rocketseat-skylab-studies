@@ -28,7 +28,7 @@ With the tools listed above follow the steps above:
 
 1. Clone the repository `git clone https://github.com/raphaelhaf/rocketseat-skylab-studies.git`
 
-2. Get into the folder ``
+2. Get into the folder `cd rocketseat-skylab-studies/skylab/03-nodejs/node-api`
 
 3. Install the dependencies with `npm install`
 
