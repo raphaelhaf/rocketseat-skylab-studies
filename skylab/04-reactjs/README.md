@@ -18,10 +18,10 @@
 
 1. Clone the repository `git clone https://github.com/raphaelhaf/rocketseat-skylab-studies`
 
-1. Enter the `cd rocketseat-skylab-studies / skylab / 04-reactjs / huntweb` folder
+1. Enter the `cd rocketseat-skylab-studies/skylab/04-reactjs/huntweb` folder
 
 1. Install the dependencies `npm install`
 
 1. Start the application `npm start`
 
-1. Go to [localhost: 3000 /] (http: // localhost: 3000 /)
+1. Go to [localhost:3000/] (http://localhost:3000/)
