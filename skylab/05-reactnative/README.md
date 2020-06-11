@@ -1,6 +1,6 @@
 # React Native
 
-This repository contains the Rocketseat React Native Skylab's course updated to the following versions
+This repository contains the Rocketseat React Native Skylab's course updated to the following versions:
 
 - [React Native 0.62.0](https://reactnative.dev/docs/getting-started)
 - [React Navigation 5.x](https://reactnavigation.org/docs/getting-started)
